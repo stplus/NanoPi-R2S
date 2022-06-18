@@ -1,6 +1,6 @@
 ## 20220619
 * 修复19.07依赖
-* self-hosted
+* ubuntu-latest
 * remove clash
 
 ## 20210303
