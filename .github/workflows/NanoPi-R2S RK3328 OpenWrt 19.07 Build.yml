@@ -72,16 +72,29 @@ jobs:
 
           svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
           
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/tcping
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/ssocks
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/naiveproxy
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core
-          svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-plugin
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/brook
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/chinadns-ng
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/dns2socks
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/dns2tcp
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/hysteria
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/ipt2socks
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/microsocks
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/naiveproxy
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/pdnsd-alt
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/shadowsocks-rust
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/shadowsocksr-libev
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/simple-obfs
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/ssocks
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/tcping
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/trojan
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/trojan-go
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/trojan-plus
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/v2ray-core
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/v2ray-geodata
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/v2ray-plugin
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/xray-core
+          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/xray-plugin
           
           svn co https://github.com/songchenwen/nanopi-r2s/trunk/luci-app-r2sflasher
           
@@ -90,7 +103,6 @@ jobs:
           
           svn co https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-dockerman
           
-          git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
           git clone https://github.com/NateLol/luci-app-oled
         
       - name: Install Clash Binaries
@@ -121,16 +133,16 @@ jobs:
           cd code/friendlywrt
 
           rm -rf feeds/packages/libs/libcap
-          svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs/libcap
+          svn co https://github.com/openwrt/packages/branches/openwrt-19.07/libs/libcap feeds/packages/libs/libcap
           
           rm -rf package/feeds/packages/netdata
-          svn co https://github.com/openwrt/packages/trunk/admin/netdata package/feeds/packages/netdata
+          svn co https://github.com/openwrt/packages/branches/openwrt-19.07/admin/netdata package/feeds/packages/netdata
 
           rm -rf feeds/packages/libs/libnatpmp
-          svn co https://github.com/coolsnowwolf/packages/trunk/libs/libnatpmp feeds/packages/libs/libnatpmp
+          svn co https://github.com/coolsnowwolf/packages/branches/openwrt-19.07/libs/libnatpmp feeds/packages/libs/libnatpmp
           
           rm -rf feeds/packages/lang/luasec
-          svn co https://github.com/coolsnowwolf/packages/trunk/lang/luasec feeds/packages/lang/luasec
+          svn co https://github.com/coolsnowwolf/packages/branches/openwrt-19.07/lang/luasec feeds/packages/lang/luasec
 
           sed -i '/STAMP_BUILT/d' feeds/packages/utils/runc/Makefile
           sed -i '/STAMP_BUILT/d' feeds/packages/utils/containerd/Makefile
@@ -138,7 +150,7 @@ jobs:
           sed -i '/upx/d' package/lean/frp/Makefile
           sed -i '/upx/d' package/lean/UnblockNeteaseMusicGo/Makefile
           sed -i '/upx/d' package/trojan-go/Makefile
-          
+          f
           wget -O package/kernel/kmod-sched-cake/Makefile https://raw.githubusercontent.com/coolsnowwolf/lede/master/package/kernel/kmod-sched-cake-oot/Makefile
           wget -O feeds/packages/libs/libxml2/Makefile https://raw.githubusercontent.com/coolsnowwolf/packages/master/libs/libxml2/Makefile
 
