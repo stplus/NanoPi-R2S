@@ -1,6 +1,7 @@
 ## 20220619
 * 修复19.07依赖
 * ubuntu-latest
+* remove clash
 
 ## 20210303
 * 日常更新
