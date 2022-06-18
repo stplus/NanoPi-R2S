@@ -2,6 +2,7 @@
 * 修复19.07依赖
 * ubuntu-latests
 * remove clash
+* remove hhvm
 
 ## 20210303
 * 日常更新
