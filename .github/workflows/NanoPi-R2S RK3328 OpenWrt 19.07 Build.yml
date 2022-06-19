@@ -71,30 +71,6 @@ jobs:
           git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 
           
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/brook
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/chinadns-ng
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/dns2socks
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/dns2tcp
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/hysteria
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/ipt2socks
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/microsocks
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/naiveproxy
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/pdnsd-alt
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/shadowsocks-rust
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/shadowsocksr-libev
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/simple-obfs
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/ssocks
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/tcping
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/trojan
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/trojan-go
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/trojan-plus
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/v2ray-core
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/v2ray-geodata
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/v2ray-plugin
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/xray-core
-          svn co https://github.com/xiaorouji/openwrt-passwall/branches/ss-rust/xray-plugin
-          
           svn co https://github.com/songchenwen/nanopi-r2s/trunk/luci-app-r2sflasher
           
           svn co https://github.com/pymumu/smartdns/trunk/package/openwrt smartdns
