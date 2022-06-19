@@ -1,6 +1,6 @@
 ## 20220619
 * 修复19.07依赖
-* ubuntu-latest
+* self-hosted
 * remove clash hvm
 * lede -b 20200915
 * add passwall feeds
