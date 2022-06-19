@@ -3,6 +3,7 @@
 * self-hosted
 * remove clash hvm
 * lede -b 20200915
+* remove manual passwall clone
 
 ## 20210303
 * 日常更新
