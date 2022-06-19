@@ -1,7 +1,7 @@
 ## 20220619
 * 修复19.07依赖
 * self-hosted
-* remove clash
+* remove clash hvm
 * lede -b 20200915
 
 ## 20210303
