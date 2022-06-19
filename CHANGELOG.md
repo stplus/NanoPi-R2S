@@ -3,6 +3,7 @@
 * ubuntu-latests
 * remove clash
 * remove hhvm
+* lede -b 20200915
 
 ## 20210303
 * 日常更新
