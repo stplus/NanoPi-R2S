@@ -50,7 +50,7 @@ jobs:
       - name: Merge LEDE
         run: |
           cd code
-          git clone https://github.com/coolsnowwolf/lede
+          git clone https://github.com/coolsnowwolf/lede -b 20200915
           cd friendlywrt
           cp -r ../lede/package/lean package/
           cp -r ../lede/package/libs/pcre package/libs/
